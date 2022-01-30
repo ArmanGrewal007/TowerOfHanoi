@@ -24,13 +24,13 @@ $\implies$ (Moving `[1,2]`, rod1 -> rod3 + Moving `[3]`, rod1 -> rod2 + Moving `
 and so on...
 It can be visualized by drawing a recursive tree. <br>
 Here is the recurrence relation - <br>
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = T(n-1) + 1 + T(n-1)">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times T(n-1) + 1">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times[2\times T(n-2) + 1] + 1">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times [2\times [2\times T(n-3) + 1] + 1] + 1">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{k} \times T(n-k) + (2^{k}-1)">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} \times T(1) + (2^{n-1}-1)">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} + 2^{n-1}-1">
-<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n}-1">
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = T(n-1) + 1 + T(n-1)"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times T(n-1) + 1"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times[2\times T(n-2) + 1] + 1"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times [2\times [2\times T(n-3) + 1] + 1] + 1"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{k} \times T(n-k) + (2^{k}-1)"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} \times T(1) + (2^{n-1}-1)"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} + 2^{n-1}-1"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n}-1"> <br>
 
 So, its time complexity is exponential.

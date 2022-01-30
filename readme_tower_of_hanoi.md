@@ -18,12 +18,13 @@ So, we just need to check if a move is legal, and repeat 1->2, 1->3, 2->3, until
 ### Soln2 -> Good old Recursion
 
 This is the solution you most probaly read everywhere - <br>
-So we need to do - `[1,2,3,4]` `[]` `[]` $\rightarrow$ `[]` `[]` `[1,2,3,4]`, i.e. move `[1,2,3,4]` from rod1 to rod3 <br>
+So we need to do - `[1,2,3,4]` `[]` `[]` $ \rightarrow $ `[]` `[]` `[1,2,3,4]`, i.e. move `[1,2,3,4]` from rod1 to rod3 <br>
 Which can be broken down into - Moving `[1,2,3]`, rod1 -> rod2 + Moving `[4]` rod1 -> rod3 + Moving `[1,2,3]`, rod2 -> rod3
-$\implies$ (Moving `[1,2]`, rod1 -> rod3 + Moving `[3]`, rod1 -> rod2 + Moving `[1,2]`, rod3 -> rod2 ) + Moving `[4]` from rod1 to rod3 + (Moving `[1,2]`, rod2 -> rod1 + Moving `[3]`, rod2 -> rod3 + Moving `[1,2]`, rod1 -> rod3 ) <br>
+$ \implies $ (Moving `[1,2]`, rod1 -> rod3 + Moving `[3]`, rod1 -> rod2 + Moving `[1,2]`, rod3 -> rod2 ) + Moving `[4]` from rod1 to rod3 + (Moving `[1,2]`, rod2 -> rod1 + Moving `[3]`, rod2 -> rod3 + Moving `[1,2]`, rod1 -> rod3 ) <br>
 and so on...
 It can be visualized by drawing a recursive tree. <br>
 Here is the recurrence relation - <br>
+Won't be visible in the dark mode :'( <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = T(n-1) + 1 + T(n-1)"> <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times T(n-1) + 1"> <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = 2\times[2\times T(n-2) + 1] + 1"> <br>

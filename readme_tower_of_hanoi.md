@@ -33,5 +33,6 @@ Won't be visible in the dark mode :'( <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} \times T(1) + (2^{n-1}-1)"> <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n-1} + 2^{n-1}-1"> <br>
 <img src="https://render.githubusercontent.com/render/math?math=T(n) = 2^{n}-1"> <br>
+$$ test $$
 
 So, its time complexity is exponential.

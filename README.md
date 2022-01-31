@@ -10,7 +10,7 @@ There are various solutions of this puzzle(with 3 cubes(or disks)), here are the
 
 ## Soln1 -> Dynamic programming
 
-After visualizing the [problem](http://towersofhanoi.info/Animate.aspx) again and again, maybe you will see a pattern? <br> <br>
+After visualizing the [problem](https://yongdanielliang.github.io/animation/web/TowerOfHanoi.html) (Note: select disks as 4, by clicking on the right of no. of disks) again and again, maybe you will see a pattern? <br> <br>
 We follow a specific pattern of moving cubes, first from rod1 -> rod2, then rod1 -> rod3, then rod2 -> rod3, in ... every ... damn ... situation! <br>
 If moving from rod1 -> rod2 is illegal, then no problem, rod2 -> rod1 will definitely be a legal move. (Think on why rod1 -> rod2 was illegal in the first place). <br>
 So, we just need to check if a move is legal, and repeat 1->2, 1->3, 2->3, until we reach our goal, as easy as that!
